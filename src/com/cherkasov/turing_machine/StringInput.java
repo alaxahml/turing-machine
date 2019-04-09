@@ -58,6 +58,10 @@ do {
 
                 Current_operated = cells.operate(first, commands.get(i).charAt(2), second, commands.get(i).charAt(7), commands.get(i).charAt(8));
 
+              if(Current_operated && second.getName().equals("q0")){
+                  return;
+              }
+
               if(Current_operated){
                   Is_operated=true;
               }
